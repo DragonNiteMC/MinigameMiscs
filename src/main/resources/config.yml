@@ -1,0 +1,25 @@
+tint:
+  api_mode_only: false
+  fade_enabled: true
+  fade_time: 5
+  intensity_modifier: 2
+  mode: HEALTH # HEALTH | DAMAGE
+  launch_health: 30.0 # if HEALTH mode
+pulse:
+  api_mode_only: true
+  mode: HEALTH # HEALTH | DAMAGE
+  damage_duration: 5 # if DAMAGE mode
+  sound_first:
+    name: custom.highbeat
+    volume: 5
+    pitch: 0.3
+  sound_second:
+    name: custom.lowbeat
+    volume: 5
+    pitch: 0.7
+  launch_health: 45
+  fast_beat: 20
+  ticks_between_sounds: 4
+  ticks_frequency: 10
+disabled_worlds:
+  - disabled_world
