@@ -8,7 +8,7 @@ import com.ericlam.mc.minigamemiscs.pulse.PulseListener;
 import com.ericlam.mc.minigamemiscs.pulse.PulseManagerImpl;
 import com.ericlam.mc.minigamemiscs.tint.TintListener;
 import com.ericlam.mc.minigamemiscs.tint.TintManagerImpl;
-import com.hypernite.mc.hnmc.core.main.HyperNiteMC;
+import com.dragonnite.mc.dnmc.core.main.DragonNiteMC;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class MinigameMiscs extends JavaPlugin implements MinigameMiscApi {
@@ -25,7 +25,7 @@ public final class MinigameMiscs extends JavaPlugin implements MinigameMiscApi {
     @Override
     public void onEnable() {
         api = this;
-        var yamlManager = HyperNiteMC.getAPI().getFactory().getConfigFactory(this)
+        var yamlManager = DragonNiteMC.getAPI().getFactory().getConfigFactory(this)
                 .register(MainConfig.class)
                 .dump();
         var mainConfig = yamlManager.getConfigAs(MainConfig.class);
