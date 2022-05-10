@@ -1,15 +1,10 @@
 package com.ericlam.mc.minigamemiscs.tint;
 
-import com.comphenix.protocol.PacketType;
-import com.comphenix.protocol.ProtocolLibrary;
-import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.wrappers.EnumWrappers;
 import com.ericlam.mc.minigamemiscs.config.MainConfig;
 import com.ericlam.mc.minigamemiscs.packetwrapper.WrapperPlayServerWorldBorder;
 import org.bukkit.WorldBorder;
 import org.bukkit.entity.Player;
-
-import java.lang.reflect.InvocationTargetException;
 
 public final class WorldBorderManager {
 

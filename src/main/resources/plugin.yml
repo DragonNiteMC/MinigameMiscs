@@ -2,4 +2,4 @@ name: MinigameMiscs
 version: ${project.version}
 api-version: "1.16"
 main: com.ericlam.mc.minigamemiscs.MinigameMiscs
-depend: [ProtocolLib, HyperNiteMC-Core]
+depend: [ProtocolLib, DragoniteMC-Core]
