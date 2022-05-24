@@ -40,8 +40,8 @@ public final class WorldBorderManager {
         borderPacket.setPortalTeleportBoundary(29999984);
         borderPacket.setCenterX(p.getLocation().getX());
         borderPacket.setCenterZ(p.getLocation().getZ());
-        borderPacket.setOldRadius(newRadius);
-        borderPacket.setRadius(oldRadius);
+        borderPacket.setOldRadius(oldRadius);
+        borderPacket.setRadius(newRadius);
         borderPacket.setSpeed(delay);
         borderPacket.setWarningTime(15);
         borderPacket.setWarningDistance(dist);

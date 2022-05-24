@@ -5,7 +5,7 @@ import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.wrappers.EnumWrappers.WorldBorderAction;
 
 public class WrapperPlayServerWorldBorder extends AbstractPacket {
-    public static final PacketType TYPE = PacketType.Play.Server.WORLD_BORDER;
+    public static final PacketType TYPE = PacketType.Play.Server.INITIALIZE_BORDER;
 
     public WrapperPlayServerWorldBorder() {
         super(new PacketContainer(TYPE), TYPE);
@@ -77,7 +77,7 @@ public class WrapperPlayServerWorldBorder extends AbstractPacket {
     }
 
     public void setWarningTime(int value) {
-        handle.getIntegers().write(1, value);
+        handle.getIntegers().write(2, value);
     }
 
     public int getWarningDistance() {
@@ -85,6 +85,6 @@ public class WrapperPlayServerWorldBorder extends AbstractPacket {
     }
 
     public void setWarningDistance(int value) {
-        handle.getIntegers().write(2, value);
+        handle.getIntegers().write(1, value);
     }
 }
